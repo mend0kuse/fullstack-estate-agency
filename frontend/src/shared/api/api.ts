@@ -1,12 +1,11 @@
 import axios from 'axios';
+import { LOCAL_STORAGE_TOKEN } from '@/entities/user';
 
 export const $api = axios.create({
     baseURL: 'http://localhost:8000',
 });
 
-export const API_ENDPOINTS = {
-    REGISTRATION: '/auth/signup',
-    LOGIN: '/auth/signin',
-
-    USER: (id: number) => `/user/${id}`,
-};
+$api.interceptors.request.use((req) => {
+    req.headers.set('Authorization', localStorage.getItem(LOCAL_STORAGE_TOKEN));
+    return req;
+});

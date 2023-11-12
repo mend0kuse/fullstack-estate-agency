@@ -39,7 +39,7 @@ export class AuthService {
         // @ts-ignore
         const newUser = await this.usersService.createUser({
             ...user,
-            role: 'user',
+            role: 'manager',
             password: hashed,
         });
 

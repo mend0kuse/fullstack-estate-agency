@@ -1,7 +1,7 @@
-import { TextInput, Button, Group, Box, Text } from '@mantine/core';
+import { TextInput, Button, Group, Box, Text, PasswordInput } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import { isValidEmail, isValidPassword } from '@/shared/lib/validator/regexp';
-import { useRegistration } from '@/features/registration/model';
+import { useRegistration } from '@/features/registration/lib';
 import { transformAxiosError } from '@/shared/lib/axios/transformAxiosError';
 
 export const Registration = () => {
@@ -28,12 +28,7 @@ export const Registration = () => {
             {error && <Text c={'red'}>{transformAxiosError(error)}</Text>}
             <form onSubmit={form.onSubmit(onSubmit)}>
                 <TextInput withAsterisk label='Email' placeholder='your@email.com' {...form.getInputProps('email')} />
-                <TextInput
-                    withAsterisk
-                    label='Password'
-                    placeholder='Asd123_-123'
-                    {...form.getInputProps('password')}
-                />
+                <PasswordInput withAsterisk label='Password' {...form.getInputProps('password')} />
 
                 <Group justify='flex-end' mt='md'>
                     <Button loading={isPending} type='submit'>

@@ -1,49 +1,28 @@
-import { useDisclosure } from '@mantine/hooks';
-import { ActionIcon, Anchor, AppShell, Burger, Group } from '@mantine/core';
-import { PropsWithChildren } from 'react';
-import { ROUTES } from '@/shared/routing';
-import { Link } from 'react-router-dom';
-import { AiOutlineUser } from 'react-icons/ai';
-import { AiOutlineLogin } from 'react-icons/ai';
-import { observer } from 'mobx-react-lite';
-import { user } from '@/entities/user';
+import { AppShell, Center } from '@mantine/core';
+import { ReactNode } from 'react';
+import { Header } from '@/widgets/header';
+import { Navbar } from '@/widgets/navbar';
 
-type Props = {};
-export const Layout = observer(({ children }: PropsWithChildren<Props>) => {
-    const [opened, { toggle }] = useDisclosure();
-
+export const Layout = ({ children }: { children: ReactNode }) => {
     return (
-        <AppShell
-            header={{ height: 60 }}
-            navbar={{ width: 300, breakpoint: 'sm', collapsed: { mobile: !opened } }}
-            padding='md'
-        >
+        <AppShell header={{ height: 60 }} navbar={{ width: 300, breakpoint: 'sm' }} padding='md'>
             <AppShell.Header>
-                <Group justify={'space-between'} p={'sm'}>
-                    <Burger opened={opened} onClick={toggle} hiddenFrom='sm' size='sm' />
-                    <Anchor component={Link} to={ROUTES.MAIN}>
-                        Logo
-                    </Anchor>
-                    {user.data ? (
-                        <ActionIcon
-                            to={ROUTES.PROFILE(user.data.id)}
-                            component={Link}
-                            variant='filled'
-                            aria-label='Settings'
-                        >
-                            <AiOutlineUser />
-                        </ActionIcon>
-                    ) : (
-                        <ActionIcon to={ROUTES.LOGIN} component={Link} variant='filled' aria-label='Settings'>
-                            <AiOutlineLogin />
-                        </ActionIcon>
-                    )}
-                </Group>
+                <Header />
             </AppShell.Header>
 
-            <AppShell.Navbar p='md'>Navbar</AppShell.Navbar>
+            <AppShell.Navbar p='md'>
+                <Navbar />
+            </AppShell.Navbar>
 
             <AppShell.Main>{children}</AppShell.Main>
         </AppShell>
     );
-});
+};
+
+export const CenteredLayout = ({ children }: { children: ReactNode }) => {
+    return (
+        <Layout>
+            <Center style={{ height: '100%' }}>{children}</Center>
+        </Layout>
+    );
+};

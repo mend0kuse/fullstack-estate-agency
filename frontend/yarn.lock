@@ -491,6 +491,11 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@mantine/carousel@^7.2.1":
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/@mantine/carousel/-/carousel-7.2.1.tgz#2e7c886ba77509a669b9fd091783f6e8ab99daa1"
+  integrity sha512-oJzuJkcfy/fohy3eXrTT2KPatknQeI9AWeAn2FB86EYMoSNWnG3IZZr920eC+KVJkKo+/nOk2aI2lTnm7Y3iwQ==
+
 "@mantine/core@^7.1.7":
   version "7.1.7"
   resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.1.7.tgz#773a30f858b660ff6099eae3e3424a9cc74ca295"
@@ -502,6 +507,13 @@
     react-remove-scroll "^2.5.6"
     react-textarea-autosize "8.5.3"
     type-fest "^3.13.1"
+
+"@mantine/dropzone@^7.2.1":
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/@mantine/dropzone/-/dropzone-7.2.1.tgz#1b76bf5abb44cca44bdcb48f2f0af29127d57b60"
+  integrity sha512-/a49eGCkTrN/zHinlowbapF3/NKSshonBy2qX/8k21dBr13I4RSvxoWWhmrRrLwbSg0sY/p/NceOenC4irAIrw==
+  dependencies:
+    react-dropzone-esm "15.0.1"
 
 "@mantine/form@^7.1.7":
   version "7.1.7"
@@ -748,6 +760,11 @@
   version "4.3.9"
   resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.3.9.tgz#144d762491967db8c6dea38e03d2206c2623feec"
   integrity sha512-69TtiDzu0bcmKQv3yg1Zx409/Kd7r0b5F1PfpYJfSHzLGtB53547V4u+9iqKYsTu/O2ai6KTb0TInNpvuQ3qmg==
+
+"@types/css-modules@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@types/css-modules/-/css-modules-1.0.5.tgz#8e5e40cd9bfbd1f14063d61ebec564a39fd227ce"
+  integrity sha512-oeKafs/df9lwOvtfiXVliZsocFVOexK9PZtLQWuPeuVCFR7jwiqlg60lu80JTe5NFNtH3tnV6Fs/ySR8BUPHAw==
 
 "@types/estree@^1.0.0":
   version "1.0.4"
@@ -1613,6 +1630,24 @@ electron-to-chromium@^1.4.535:
   version "1.4.576"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.576.tgz#0c6940fdc0d60f7e34bd742b29d8fa847c9294d1"
   integrity sha512-yXsZyXJfAqzWk1WKryr0Wl0MN2D47xodPvEEwlVePBnhU5E7raevLQR+E6b9JAD3GfL/7MbAL9ZtWQQPcLx7wA==
+
+embla-carousel-react@^8.0.0-rc14:
+  version "8.0.0-rc14"
+  resolved "https://registry.yarnpkg.com/embla-carousel-react/-/embla-carousel-react-8.0.0-rc14.tgz#ed5d9e641134fdc7e060a9188b0ccf13f7677da1"
+  integrity sha512-2b9vXACEcn0qja4QyaFMfCgFbFhumV3krOCGr9+jlQiuXt5z/EyfiYYziDsm70DhTtxtg/uKEGflIqZSfWRYKg==
+  dependencies:
+    embla-carousel "8.0.0-rc14"
+    embla-carousel-reactive-utils "8.0.0-rc14"
+
+embla-carousel-reactive-utils@8.0.0-rc14:
+  version "8.0.0-rc14"
+  resolved "https://registry.yarnpkg.com/embla-carousel-reactive-utils/-/embla-carousel-reactive-utils-8.0.0-rc14.tgz#a8844b3930fb3b1423e07544b3efb125525c454a"
+  integrity sha512-r153bynAo9eTBuWWggPWLYnE9xqVOYmkkeMbAuGX8pkUisJN8aTLMW9b7CYOzjURRB7z85EmYRbeBg+axQzc9g==
+
+embla-carousel@8.0.0-rc14:
+  version "8.0.0-rc14"
+  resolved "https://registry.yarnpkg.com/embla-carousel/-/embla-carousel-8.0.0-rc14.tgz#039372f97b57e95c9b839c6e27b8ff2f63b23053"
+  integrity sha512-/NLkMFZ7xKryRVYeUjmhbfV63Vr07saPBDwAX2TPMbcaiWwfQfU5Xsc2AiCMZANtwmzsjRK6gSBa7hOy/VXu6g==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -2751,6 +2786,11 @@ jsonfile@^6.0.1:
     object.assign "^4.1.4"
     object.values "^1.1.6"
 
+jwt-decode@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/jwt-decode/-/jwt-decode-4.0.0.tgz#2270352425fd413785b2faf11f6e755c5151bd4b"
+  integrity sha512-+KJGIyHgkGuIq3IEBNftfhW/LfWhXUIY6OmyVWjliu5KH1y0fw7VQ8YndE2O4qZdMSd9SqbnC8GOcZEy0Om7sA==
+
 keyv@^4.5.3:
   version "4.5.4"
   resolved "https://registry.yarnpkg.com/keyv/-/keyv-4.5.4.tgz#a879a99e29452f942439f2a405e3af8b31d4de93"
@@ -3417,6 +3457,13 @@ react-dom@^18.2.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-dropzone-esm@15.0.1:
+  version "15.0.1"
+  resolved "https://registry.yarnpkg.com/react-dropzone-esm/-/react-dropzone-esm-15.0.1.tgz#8c689638aaa9feb5b2a429dd565acfa6792263e5"
+  integrity sha512-RdeGpqwHnoV/IlDFpQji7t7pTtlC2O1i/Br0LWkRZ9hYtLyce814S71h5NolnCZXsIN5wrZId6+8eQj2EBnEzg==
+  dependencies:
+    prop-types "^15.8.1"
 
 react-i18next@^13.2.0:
   version "13.3.1"

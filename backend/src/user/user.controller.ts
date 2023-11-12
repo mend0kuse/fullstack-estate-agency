@@ -1,25 +1,47 @@
 import { NotFoundException } from '@nestjs/common/exceptions';
-import { Body, Controller, Patch, Req, UseGuards, UsePipes, Get, Param, ParseIntPipe } from '@nestjs/common';
+import {
+    Body,
+    Controller,
+    Patch,
+    Req,
+    UseGuards,
+    Get,
+    Param,
+    ParseIntPipe,
+    UseInterceptors,
+    UploadedFile,
+    ParseFilePipeBuilder,
+} from '@nestjs/common';
 import { AuthGuard } from 'src/auth/auth.guard';
 import { excludeFields } from 'src/shared/lib/excludeFields';
-import { ZodValidationPipe } from 'src/validation/zod-validation.pipe';
-import { profileDto, ProfileDto } from './schemas/profile.dto';
+import { ProfileDto } from './schemas/profile.dto';
 import { RequestWithUser } from './schemas/user.dto';
 import { UserService } from './user.service';
+import { FileInterceptor } from '@nestjs/platform-express';
+import { makeImagePath } from '../shared/lib/makeImagePath';
 
 @Controller('user')
 export class UserController {
-    constructor(private readonly userService: UserService) {}
-
     @Patch('profile')
     @UseGuards(AuthGuard)
-    @UsePipes(new ZodValidationPipe(profileDto))
-    updateProfile(@Req() request: RequestWithUser, @Body() dto: ProfileDto) {
+    @UseInterceptors(FileInterceptor('avatar', { dest: 'uploads/' }))
+    updateProfile(
+        @Req() request: RequestWithUser,
+        @Body() dto: ProfileDto,
+        @UploadedFile(
+            new ParseFilePipeBuilder().build({
+                fileIsRequired: false,
+            })
+        )
+        file?: Express.Multer.File
+    ) {
         return this.userService.updateProfile({
             email: request.user?.email,
-            profile: dto,
+            profile: { ...dto, avatar: makeImagePath(file) },
         });
     }
+
+    constructor(private readonly userService: UserService) {}
 
     @Get(':id')
     async getOne(@Param('id', ParseIntPipe) id: number) {

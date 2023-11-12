@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7fae27c0-356f-473f-8ea2-3a25239f3086" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/prisma/migrations/20231111031344_asd/migration.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/apartment/apartment.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/apartment/apartment.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/apartment/apartment.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/apartment/models/apartment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/shared/lib/makeImagePath.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/116a0a8833728017b0c3218297effa5b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/135e2db16c0fa5cc063cebceca4570f9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/318fd6242f77031f124b963ce2c0af2a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/475054eceb81c9244860b5479ee0d4ad" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/4e13dbe8c95bc4c9d4e4b820d87b9d96" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/71f735af57d91819d861dbdc340cff85" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/9541d1ad3cd81ea9b2417865e735a0da" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/9c15b16f1a529d73dee870d1f3026a09" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/b290af39bf1da82d899941d7310af0e0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/e6f20c99d1d13717b57d7b6d36a9141b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/app.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/ui.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/ui.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/entities/user/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/entities/user/ui/profile-card/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/entities/user/ui/profile-card/profile-card.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/entities/user/ui/profile-card/profile-card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/entities/user/ui/profile-form/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/entities/user/ui/profile-form/profile-form.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/entities/user/ui/profile-form/profile-form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/entities/user/ui/user-preview/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/entities/user/ui/user-preview/user-preview.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/entities/user/ui/user-preview/user-preview.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/apartment/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/apartment/ui.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/create-apartment/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/create-apartment/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/create-apartment/lib.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/create-apartment/ui.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/main/ui.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/profile/ui.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/shared/api/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/shared/lib/form/convertToFormData.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/shared/ui/dropzone/dropzone.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/shared/ui/dropzone/dropzone.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/shared/ui/dropzone/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/shared/ui/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/shared/ui/useLoadingAndErrorHandler.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/widgets/apartments/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/widgets/apartments/lib.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/widgets/apartments/ui.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/widgets/apartments/ui.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/widgets/header/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/widgets/header/ui.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/widgets/navbar/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/widgets/navbar/ui.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/backend/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/auth/auth.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/auth/roles/roles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/auth/roles/roles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/user/schemas/profile.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/user/schemas/profile.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/user/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/user/user.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/global.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/router/router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/router/router.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/entities/user/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/entities/user/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/entities/user/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/entities/user/model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/login/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/login/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/login/lib.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/registration/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/registration/lib.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/registration/registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/registration/registration.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/layout/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/layout/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/layout/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/login/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/login/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/login/ui.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/main/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/main/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/main/main.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/profile/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/profile/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/profile/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/profile/lib.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/profile/profile.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/registration/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/registration/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/registration/registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/registration/ui.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/shared/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/shared/api/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/shared/routing/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/shared/routing/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="false" />
+    <option name="myAllFileTypesSelected" value="true" />
+    <option name="mySelectedFileTypes">
+      <set />
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2Xk7nBqaqUjV65qV6eeNrgenN2g" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/vasilev/develop/fullstack-estate-agency/frontend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;/Users/vasilev/develop/fullstack-estate-agency/frontend/node_modules/stylelint&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/vasilev/develop/fullstack-estate-agency/frontend/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend" />
+      <recent name="$PROJECT_DIR$/backend/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/entities/user/ui/profile-card" />
+      <recent name="$PROJECT_DIR$/frontend/src/entities/user/ui/user-preview" />
+      <recent name="$PROJECT_DIR$/frontend/src/pages/main" />
+    </key>
+    <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/frontend/src/shared/api/config.ts" />
+      <recent name="$PROJECT_DIR$/frontend/src/entities/user/model.ts" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7fae27c0-356f-473f-8ea2-3a25239f3086" name="Changes" comment="" />
+      <created>1699161388371</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699161388371</updated>
+      <workItem from="1699161389393" duration="998000" />
+      <workItem from="1699162393795" duration="17821000" />
+      <workItem from="1699341600249" duration="29000" />
+      <workItem from="1699668946866" duration="3827000" />
+      <workItem from="1699672784910" duration="7000000" />
+      <workItem from="1699689578469" duration="1650000" />
+      <workItem from="1699691237366" duration="7642000" />
+      <workItem from="1699762688267" duration="12596000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

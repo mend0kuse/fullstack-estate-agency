@@ -7,22 +7,59 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
 model User {
-  id       Int      @id @default(autoincrement())
-  email    String   @unique
-  role     String
-  password String
-  profile  Profile?
+  id        Int         @id @default(autoincrement())
+  email     String      @unique
+  role      String
+  password  String
+  apartment Apartment[]
+  profile   Profile?
 }
 
 model Profile {
-  id     Int   @id @default(autoincrement())
-  user   User? @relation(fields: [userId], references: [id])
-  userId Int?  @unique
+  id      Int     @id @default(autoincrement())
+  userId  Int?    @unique
+  name    String?
+  age     String?
+  avatar  String?
+  user    User?   @relation(fields: [userId], references: [id])
+}
 
-  name     String?
-  age      String?
-  avatar   String?
-  country  String?
+model Apartment {
+  id               Int                      @id @default(autoincrement())
+  createdAt        DateTime                 @default(now())
+  title            String
+  address          String
+  description      String
+  views            Int
+  price            Int
+  prepayment       Int
+  pledge           Int
+  communalIncluded Boolean
+  userId           Int?
+  user             User?                    @relation(fields: [userId], references: [id])
+  characteristic   ApartmentCharacteristic?
+  images           Image[]
+
+  @@index([userId], map: "Apartment_userId_fkey")
+}
+
+model Image {
+  id          Int        @id @default(autoincrement())
+  src         String
+  apartmentId Int?
+  apartment   Apartment? @relation(fields: [apartmentId], references: [id])
+
+  @@index([apartmentId], map: "Image_apartmentId_fkey")
+}
+
+model ApartmentCharacteristic {
+  id          Int        @id @default(autoincrement())
+  square      String
+  kitchen     String
+  live        String
+  year        String
+  floor       String
+  apartmentId Int?       @unique
+  apartment   Apartment? @relation(fields: [apartmentId], references: [id])
 }

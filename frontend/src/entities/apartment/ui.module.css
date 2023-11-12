@@ -1,0 +1,35 @@
+.price {
+    color: var(--mantine-color-black);
+}
+
+.carousel {
+    &:hover {
+        .carouselControls {
+            opacity: 1;
+        }
+    }
+}
+
+.carouselControls {
+    transition: opacity 150ms ease;
+    opacity: 0;
+}
+
+
+.title {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.carouselIndicator {
+    width: 4px !important;
+    height: 4px !important;
+    transition: width 250ms ease;
+
+    &[data-active] {
+        width: 16px !important;
+    }
+}
