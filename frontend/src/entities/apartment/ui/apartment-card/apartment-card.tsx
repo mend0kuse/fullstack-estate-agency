@@ -1,7 +1,7 @@
 import { Image, Card, Text, Group, Button, Box } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
-import classes from './ui.module.css';
-import { TApartment } from './model';
+import classes from './apartment-card.module.css';
+import { TApartment } from '../../model';
 import { GrView } from 'react-icons/gr';
 import { UserPreview } from '@/entities/user';
 import { Link } from 'react-router-dom';
@@ -11,7 +11,7 @@ type Props = {
     apartment: TApartment;
 };
 
-export const ApartmentPreview = ({
+export const ApartmentCard = ({
     apartment: { user, createdAt, address, price, title, views, description, id, images },
 }: Props) => {
     const slides = images.map((image, index) => (

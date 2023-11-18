@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { User } from '../../user/schemas/user.dto';
 
 export const apartmentDto = z.object({
     title: z.string(),
@@ -18,7 +19,6 @@ export const apartmentDto = z.object({
 
 export const apartmentDtoCreate = apartmentDto.required();
 
-export const apartmentDtoUpdate = apartmentDto.partial().extend({}).strict();
-
-export type TApartmentDtoUpdate = z.infer<typeof apartmentDtoUpdate>;
+export type TApartment = z.infer<typeof apartmentDto>;
+export type TApartmentWithUser = TApartment & { user: User };
 export type TApartmentDtoCreate = z.infer<typeof apartmentDtoCreate>;

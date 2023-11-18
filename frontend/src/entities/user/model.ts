@@ -65,6 +65,10 @@ export class User {
     get name() {
         return this.data?.profile.name;
     }
+
+    get id() {
+        return this.data?.id;
+    }
 }
 
 export const user = new User();

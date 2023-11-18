@@ -6,6 +6,8 @@ import { RegistrationPage } from '@/pages/registration';
 import { CreateApartment } from '@/pages/create-apartment';
 import { ApartmentPage } from '@/pages/apartment';
 import { Main } from '@/pages/main';
+import { NothingFound } from '@/pages/error';
+import { Catalog } from '@/pages/catalog';
 
 export const router = createBrowserRouter([
     {
@@ -15,6 +17,11 @@ export const router = createBrowserRouter([
     {
         path: ROUTES.MAIN,
         element: <Main />,
+        errorElement: <NothingFound />,
+    },
+    {
+        path: ROUTES.CATALOG,
+        element: <Catalog />,
     },
     {
         path: ROUTES.LOGIN,

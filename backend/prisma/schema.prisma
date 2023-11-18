@@ -7,6 +7,23 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Order {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  status    String
+
+  clientId Int?
+  client   User? @relation(fields: [clientId], references: [id], name: "client" )
+
+  managerId Int?
+  manager   User? @relation(fields: [managerId], references: [id], name: "manager")
+
+  apartmentId Int?
+  apartment   Apartment? @relation(fields: [apartmentId], references: [id])
+}
+
 model User {
   id        Int         @id @default(autoincrement())
   email     String      @unique
@@ -14,6 +31,9 @@ model User {
   password  String
   apartment Apartment[]
   profile   Profile?
+
+  clientOrders  Order[] @relation(name: "client")
+  managerOrders Order[] @relation(name: "manager")
 }
 
 model Profile {
@@ -22,6 +42,7 @@ model Profile {
   name    String?
   age     String?
   avatar  String?
+  country String?
   user    User?   @relation(fields: [userId], references: [id])
 }
 
@@ -40,6 +61,8 @@ model Apartment {
   user             User?                    @relation(fields: [userId], references: [id])
   characteristic   ApartmentCharacteristic?
   images           Image[]
+
+  orders Order[]
 
   @@index([userId], map: "Apartment_userId_fkey")
 }

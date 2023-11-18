@@ -1,6 +1,7 @@
 import {
     Body,
     Controller,
+    Delete,
     Get,
     Param,
     ParseIntPipe,
@@ -13,10 +14,11 @@ import {
 import { ApartmentService } from './apartment.service';
 import { NotFoundException } from '@nestjs/common/exceptions';
 import { AuthGuard } from '../auth/auth.guard';
-import { TApartmentDtoCreate } from './models/apartment';
+import { TApartmentDtoCreate, TApartmentWithUser } from './models/apartment';
 import { RequestWithUser } from '../user/schemas/user.dto';
-import { FileInterceptor, FilesInterceptor } from '@nestjs/platform-express';
+import { FilesInterceptor } from '@nestjs/platform-express';
 import { makeImagePath } from '../shared/lib/makeImagePath';
+import { isAuthor } from '../shared/lib/isAuthor';
 
 @Controller('apartment')
 export class ApartmentController {
@@ -46,8 +48,24 @@ export class ApartmentController {
             throw new NotFoundException();
         }
 
-        // await this.apartmentService.update({ id, dto: { views: founded.views + 1 } });
+        await this.apartmentService.update({ id, views: founded.views + 1 });
 
         return founded;
+    }
+
+    @Delete(':id')
+    @UseGuards(AuthGuard)
+    async delete(@Param('id', ParseIntPipe) id: number, @Request() req: RequestWithUser) {
+        const deletedApartment = await this.apartmentService.getOne(id);
+
+        if (!deletedApartment) {
+            throw new NotFoundException();
+        }
+
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        isAuthor(req.user, deletedApartment as TApartmentWithUser);
+
+        return this.apartmentService.deleteOne(id);
     }
 }

@@ -5,21 +5,28 @@ import { useParams } from 'react-router-dom';
 import { isNumber } from 'lodash';
 import { API_ENDPOINTS, QUERY_KEYS } from '@/shared/api/config';
 import { user } from '@/entities/user/model';
+import { getUserOrders, updateOrderStatus } from '@/entities/order/api';
+import { OrderStatus } from '@/entities/order';
 
 export const useGetUser = () => {
     const { id } = useParams<{ id: string }>();
     const idToNumber = Number(id);
 
-    if (!id || !isNumber(idToNumber)) {
-        return null;
-    }
-
     const response = useQuery({
-        queryKey: [QUERY_KEYS.USER],
+        queryKey: [idToNumber, QUERY_KEYS.USER],
         queryFn: () => $api.get<TUser>(API_ENDPOINTS.USER(idToNumber)),
+        enabled: !!id && isNumber(idToNumber),
     });
 
     return { ...response, user: response.data?.data };
+};
+
+export const useGetOrders = (isHomeProfile: boolean) => {
+    return useQuery({
+        queryKey: [QUERY_KEYS.ORDER],
+        queryFn: getUserOrders,
+        enabled: isHomeProfile,
+    });
 };
 
 export const useEditProfile = ({ onSuccess }: { onSuccess: () => void }) => {
@@ -40,4 +47,20 @@ export const useEditProfile = ({ onSuccess }: { onSuccess: () => void }) => {
     });
 
     return { editProfile: editProfile.mutate, ...editProfile };
+};
+
+export const useEditOrderStatus = () => {
+    const queryClient = useQueryClient();
+
+    const editOrder = useMutation({
+        mutationFn: ({ orderId, status }: { orderId: number; status: OrderStatus }) => {
+            return updateOrderStatus(orderId, status);
+        },
+
+        onSuccess: async () => {
+            await queryClient.invalidateQueries({ queryKey: [QUERY_KEYS.ORDER] });
+        },
+    });
+
+    return { editOrder: editOrder.mutate, ...editOrder };
 };

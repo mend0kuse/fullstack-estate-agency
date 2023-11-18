@@ -37,12 +37,10 @@ export class AuthService {
 
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
-        const newUser = await this.usersService.createUser({
+        return this.usersService.createUser({
             ...user,
-            role: 'manager',
+            role: 'user',
             password: hashed,
         });
-
-        return newUser;
     }
 }

@@ -7,3 +7,15 @@ export const getApartments = async () => {
 
     return response.data;
 };
+
+export const getApartmentById = async (id: number) => {
+    const response = await $api.get<TApartment>(API_ENDPOINTS.APARTMENT_BY_ID(id));
+
+    return response.data;
+};
+
+export const deleteApartmentById = async (id: number) => {
+    const response = await $api.delete<TApartment>(API_ENDPOINTS.APARTMENT_BY_ID(id));
+
+    return response.data;
+};

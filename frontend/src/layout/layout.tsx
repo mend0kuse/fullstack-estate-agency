@@ -1,20 +1,20 @@
 import { AppShell, Center } from '@mantine/core';
 import { ReactNode } from 'react';
 import { Header } from '@/widgets/header';
-import { Navbar } from '@/widgets/navbar';
+import { Footer } from '@/widgets/footer';
 
 export const Layout = ({ children }: { children: ReactNode }) => {
     return (
-        <AppShell header={{ height: 60 }} navbar={{ width: 300, breakpoint: 'sm' }} padding='md'>
+        <AppShell footer={{ height: 60 }} header={{ height: 60 }} padding='md'>
             <AppShell.Header>
                 <Header />
             </AppShell.Header>
 
-            <AppShell.Navbar p='md'>
-                <Navbar />
-            </AppShell.Navbar>
+            <AppShell.Main px={0}>{children}</AppShell.Main>
 
-            <AppShell.Main>{children}</AppShell.Main>
+            <AppShell.Footer>
+                <Footer />
+            </AppShell.Footer>
         </AppShell>
     );
 };

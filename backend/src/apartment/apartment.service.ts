@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import { TApartmentDtoCreate } from './models/apartment';
+import { NotFoundException } from '@nestjs/common/exceptions';
 
 @Injectable()
 export class ApartmentService {
@@ -26,86 +27,34 @@ export class ApartmentService {
         return this.prismaService.apartment.findFirst({ where: { id }, include: this.apartmentInclude });
     }
 
-    // async update(params: { id: number; dto: TArticleDtoUpdate }) {
-    //     const { types, codeBlocks, imageBlocks, likes, dislikes, textBlocks, ...data } = params.dto;
-    //     try {
-    //         return await this.prismaService.article.update({
-    //             where: { id: params.id },
-    //             include: this.apartmentInclude,
-    //
-    //             data: {
-    //                 ...data,
-    //
-    //                 ArticleStats: {
-    //                     update: {
-    //                         ...(likes && {
-    //                             likes: likes,
-    //                         }),
-    //                         ...(dislikes && {
-    //                             dislikes: dislikes,
-    //                         }),
-    //                     },
-    //                 },
-    //
-    //                 types: {
-    //                     ...(types && {
-    //                         deleteMany: { id: { in: types.map(({ id }) => id) } },
-    //                         createMany: { data: types },
-    //                     }),
-    //                 },
-    //
-    //                 codeBlocks: {
-    //                     ...(codeBlocks && {
-    //                         deleteMany: { id: { in: codeBlocks.map(({ id }) => id) } },
-    //                         createMany: { data: codeBlocks },
-    //                     }),
-    //                 },
-    //
-    //                 imageBlocks: {
-    //                     ...(imageBlocks && {
-    //                         deleteMany: { id: { in: imageBlocks.map(({ id }) => id) } },
-    //                         createMany: { data: imageBlocks },
-    //                     }),
-    //                 },
-    //
-    //                 textBlocks: {
-    //                     ...(textBlocks && {
-    //                         deleteMany: { id: { in: textBlocks.map(({ id }) => id) } },
-    //                         createMany: { data: textBlocks },
-    //                     }),
-    //                 },
-    //             },
-    //         });
-    //     } catch (error) {
-    //         throw new NotFoundException();
-    //     }
-    // }
+    async update(params: { id: number; views: number }) {
+        const { id, views } = params;
 
-    // async deleteOne(id: number) {
-    //     const deleteCode = this.prismaService.articleBlockCode.deleteMany({ where: { articleId: id } });
-    //     const deleteStats = this.prismaService.articleStats.deleteMany({ where: { articleId: id } });
-    //     const deleteText = this.prismaService.articleBlockText.deleteMany({ where: { articleId: id } });
-    //     const deleteImages = this.prismaService.articleBlockImage.deleteMany({ where: { articleId: id } });
-    //     const deleteTypes = this.prismaService.articleType.deleteMany({ where: { articleId: id } });
-    //     const deleteComments = this.prismaService.comment.deleteMany({
-    //         where: { articleId: id },
-    //     });
-    //     const deleteArticle = this.prismaService.article.delete({ where: { id }, include: this.apartmentInclude });
-    //
-    //     try {
-    //         return await this.prismaService.$transaction([
-    //             deleteCode,
-    //             deleteStats,
-    //             deleteText,
-    //             deleteImages,
-    //             deleteTypes,
-    //             deleteComments,
-    //             deleteArticle,
-    //         ]);
-    //     } catch (error) {
-    //         throw new Error(error);
-    //     }
-    // }
+        try {
+            return await this.prismaService.apartment.update({
+                where: { id: id },
+                include: this.apartmentInclude,
+
+                data: {
+                    views: views,
+                },
+            });
+        } catch (error) {
+            throw new NotFoundException();
+        }
+    }
+
+    async deleteOne(id: number) {
+        const deleteImages = this.prismaService.image.deleteMany({ where: { apartmentId: id } });
+        const deleteStats = this.prismaService.apartmentCharacteristic.deleteMany({ where: { apartmentId: id } });
+        const deleteArticle = this.prismaService.apartment.delete({ where: { id }, include: this.apartmentInclude });
+
+        try {
+            return await this.prismaService.$transaction([deleteImages, deleteStats, deleteArticle]);
+        } catch (error) {
+            throw new Error(error);
+        }
+    }
 
     async createOne(apartment: TApartmentDtoCreate, userId: number | undefined) {
         const {

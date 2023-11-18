@@ -1,7 +1,7 @@
 import { Layout } from '@/layout';
 import { Apartments } from '@/widgets/apartments';
 
-export const Main = () => {
+export const Catalog = () => {
     return (
         <Layout>
             <Apartments />
