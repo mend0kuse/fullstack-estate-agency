@@ -2,18 +2,18 @@ import { $api } from '@/shared/api/api';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { TUser } from '@/entities/user';
 import { useParams } from 'react-router-dom';
-import { isNumber } from 'lodash';
 import { API_ENDPOINTS, QUERY_KEYS } from '@/shared/api/config';
 import { user } from '@/entities/user/model';
 import { getUserOrders, updateOrderStatus } from '@/entities/order/api';
 import { OrderStatus } from '@/entities/order';
+import { isNumber } from 'lodash';
 
 export const useGetUser = () => {
     const { id } = useParams<{ id: string }>();
     const idToNumber = Number(id);
 
     const response = useQuery({
-        queryKey: [idToNumber, QUERY_KEYS.USER],
+        queryKey: [QUERY_KEYS.USER, idToNumber],
         queryFn: () => $api.get<TUser>(API_ENDPOINTS.USER(idToNumber)),
         enabled: !!id && isNumber(idToNumber),
     });
@@ -40,9 +40,9 @@ export const useEditProfile = ({ onSuccess }: { onSuccess: () => void }) => {
         onSuccess: async (response) => {
             const updatedUser = response.data;
             user.setData(updatedUser);
+            await queryClient.invalidateQueries({ queryKey: [QUERY_KEYS.USER] });
 
             onSuccess();
-            await queryClient.invalidateQueries({ queryKey: [QUERY_KEYS.USER] });
         },
     });
 

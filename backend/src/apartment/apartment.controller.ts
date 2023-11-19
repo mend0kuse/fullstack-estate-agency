@@ -6,27 +6,30 @@ import {
     Param,
     ParseIntPipe,
     Post,
+    Query,
     Request,
     UploadedFiles,
     UseGuards,
     UseInterceptors,
+    UsePipes,
 } from '@nestjs/common';
 import { ApartmentService } from './apartment.service';
 import { NotFoundException } from '@nestjs/common/exceptions';
 import { AuthGuard } from '../auth/auth.guard';
-import { TApartmentDtoCreate, TApartmentWithUser } from './models/apartment';
+import { apartmentQuery, TApartmentDtoCreate, TApartmentQuery, TApartmentWithUser } from './models/apartment';
 import { RequestWithUser } from '../user/schemas/user.dto';
 import { FilesInterceptor } from '@nestjs/platform-express';
 import { makeImagePath } from '../shared/lib/makeImagePath';
 import { isAuthor } from '../shared/lib/isAuthor';
+import { ZodValidationPipe } from '../validation/zod-validation.pipe';
 
 @Controller('apartment')
 export class ApartmentController {
     constructor(readonly apartmentService: ApartmentService) {}
     @Get()
-    // @UsePipes(new ZodValidationPipe(articleQuery))
-    getAll() {
-        return this.apartmentService.getAll();
+    @UsePipes(new ZodValidationPipe(apartmentQuery))
+    getAll(@Query() query: TApartmentQuery) {
+        return this.apartmentService.getAll(query);
     }
 
     @Post()

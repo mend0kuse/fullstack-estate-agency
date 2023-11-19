@@ -9,9 +9,11 @@ import { ROUTES } from '@/shared/routing';
 
 type Props = {
     apartment: TApartment;
+    isBigView?: boolean;
 };
 
 export const ApartmentCard = ({
+    isBigView,
     apartment: { user, createdAt, address, price, title, views, description, id, images },
 }: Props) => {
     const slides = images.map((image, index) => (
@@ -27,8 +29,9 @@ export const ApartmentCard = ({
                     withIndicators
                     loop
                     classNames={{
-                        root: classes.carousel,
+                        root: `${classes.carousel}`,
                         controls: classes.carouselControls,
+                        slide: `${isBigView ? classes.big : ''}`,
                         indicator: classes.carouselIndicator,
                     }}
                 >

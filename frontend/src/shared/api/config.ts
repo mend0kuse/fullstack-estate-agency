@@ -6,6 +6,7 @@ export const API_ENDPOINTS = {
     EDIT_PROFILE: `/user/profile`,
 
     APARTMENT: `/apartment`,
+    APARTMENT_WITH_QUERY: (query: string) => `/apartment${query}`,
     APARTMENT_BY_ID: (id: number) => `/apartment/${id}`,
 
     ORDER_BY_APARTMENT_ID: (id: number) => `/order/${id}`,

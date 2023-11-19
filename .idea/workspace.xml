@@ -5,90 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fae27c0-356f-473f-8ea2-3a25239f3086" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/prisma/migrations/20231118120505_ads/migration.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/order/dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/order/order.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/order/order.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/order/order.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/order/statuses.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/shared/lib/isAuthor.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/02b637d8eddb6ea4cbbbe7c7f76b7ea9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/09c5265dfff550b035c39b8b96f29c48" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/0cd1103200f8771b6e77edb7091ed659" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/189974e1a61eb9c8139a55ddb5dd0e78" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/277f3190eb60de79ee30ae3bb111a318" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/2c378ed44f29296c7e3806aedff7570f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/2df1e837fd14c85a6b7f733905a5e659" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/2e79e7cf6e346677d8b423288626c44d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/33cec4891c5c96c8abd85604e29263f0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/496313410b9f4b3053c5f19ddbd18b68" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/5cb3a18c8fffde62f3122a925dad8adc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/6706940906cabc0b7e548347832594fb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/703dfe2169f9f0dc31805e2dea03f191" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/72625dae5fd61a264d226bdcc5e81650" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/85d403c0bc68221c2c917f0a97d6eb9d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/ab3ec99ba083952241eb40c81401eacc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/adeac47111b0c50369c094795f0bf325" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/bba709d280be62c5a04d9da9f96b0f5d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/c472126db5093ff00bc2d24423d96ec1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/ea43045ad930c434e0a3f243c9b35a59" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/ebd066a53df620d3b9f86f2f47df7aff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/f3103944f104c9b7737eb66f17b51c4f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/preview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/ui/apartment-preview/apartment-preview.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/ui/apartment-preview/apartment-preview.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/entities/order/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/entities/order/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/entities/order/model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/entities/order/ui/order-list/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/entities/order/ui/order-list/order-list.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/apartment/lib.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/catalog/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/catalog/ui.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/error/Illustration.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/error/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/error/ui.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/error/ui.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/main/ui/contacts/contacts.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/main/ui/contacts/contacts.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/main/ui/contacts/icons.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/main/ui/contacts/icons.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/main/ui/main-preview/main-preview.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/main/ui/main-preview/main-preview.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/main/ui/main/main.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/widgets/footer/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/widgets/footer/ui.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/widgets/footer/ui.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/widgets/header/ui.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/0d1d296953df817c711c1c9723ca05f1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/13b644fb5a8457b9b9a51003d74017ed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/165285d1ed948170eb96306a3631eb5a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/1f1817f67b94a6d5a785cf94a2b5ca6a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/2dfa34c8fb4f7c272c4b80c4a2067fb1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/3a1a038b4b3772e5e000d694da28fb7f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/3a5dcc1f6f2c3eb983161dc689d9a8fa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/3e4efadd0d9b08fff29d88de96402e58" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/466d33e19f75404d608c75de93506892" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/4a593b8461ef85fc16924947f319721e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/579c26b1dc954a5712a4a65b3806e74d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/5d15e8bb6d7fa7e6206126cdbfb878f6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/7c2ac3de3ac20b540a7e738f6b8a7390" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/8561b6a1612bbde16717924b553380a2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/ad43ff6d34e9328d416bb0dad4bcf675" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/bc69f30e2f4962d0f786ea204db963b1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/c9b14040650eb1854e27de18b41ada22" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/dfa08b051b187485af32311d6ed19808" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/f2592858240781490dd99a2e84cc60d3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uploads/ff05bf111423fb7cdef9e7c6d77ece82" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/features/search/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/features/search/ui/search-form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/main/ui/features/features.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/main/ui/features/features.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/shared/lib/url/setQueryParamInUrl.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/shared/ui/theme-icon/theme-icon.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/shared/ui/theme-icon/theme-switcher.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/widgets/apartments/ui/apartments.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/widgets/apartments/ui/filters/filters.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/prisma/migrations/20231105063821_init/migration.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/prisma/migrations/20231111031344_asd/migration.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/backend/prisma/schema.prisma" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/apartment/apartment.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/apartment/apartment.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/apartment/apartment.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/apartment/apartment.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/apartment/models/apartment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/apartment/models/apartment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/auth/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/validation/zod-validation.pipe.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/validation/zod-validation.pipe.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/router/router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/router/router.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/user/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/user/user.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/entities/apartment/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/entities/apartment/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/entities/apartment/ui.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/ui/apartment-card/apartment-card.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/entities/apartment/ui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/ui/apartment-card/apartment-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/entities/user/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/entities/user/model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/entities/apartment/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/entities/apartment/ui/apartment-card/apartment-card.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/ui/apartment-card/apartment-card.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/entities/apartment/ui/apartment-card/apartment-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/ui/apartment-card/apartment-card.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/layout/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/apartment/ui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/apartment/ui.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/create-apartment/lib.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/create-apartment/lib.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/main/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/main/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/main/ui.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/create-apartment/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/create-apartment/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/create-apartment/ui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/create-apartment/ui.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/main/ui/main-preview/main-preview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/main/ui/main-preview/main-preview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/main/ui/main/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/main/ui/main/main.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/profile/lib.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/profile/lib.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/profile/ui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/profile/ui.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/shared/api/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/shared/api/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/shared/routing/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/shared/routing/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/widgets/apartments/ui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/widgets/apartments/ui.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/widgets/apartments/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/widgets/apartments/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/widgets/apartments/ui.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/widgets/apartments/ui.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/widgets/header/ui.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/widgets/header/ui.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/widgets/header/ui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/widgets/header/ui.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/widgets/navbar/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/widgets/navbar/ui.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,13 +124,14 @@
       <recent name="$PROJECT_DIR$/backend/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/widgets/apartments/ui" />
+      <recent name="$PROJECT_DIR$/frontend/src/widgets/apartments/ui/filters" />
+      <recent name="$PROJECT_DIR$/frontend/src/shared/ui/theme-icon" />
       <recent name="$PROJECT_DIR$/frontend/src/pages/main/ui/main-preview" />
       <recent name="$PROJECT_DIR$/frontend/src/entities/apartment/ui/apartment-card" />
-      <recent name="$PROJECT_DIR$/frontend/src/entities/apartment/ui" />
-      <recent name="$PROJECT_DIR$/frontend/src/entities/user/ui/profile-card" />
-      <recent name="$PROJECT_DIR$/frontend/src/entities/user/ui/user-preview" />
     </key>
     <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/frontend/src/entities/apartment/model.ts" />
       <recent name="$PROJECT_DIR$/frontend/src/shared/api/config.ts" />
       <recent name="$PROJECT_DIR$/frontend/src/entities/user/model.ts" />
     </key>
@@ -188,7 +161,9 @@
       <workItem from="1700290642537" duration="2715000" />
       <workItem from="1700293366146" duration="418000" />
       <workItem from="1700293797901" duration="658000" />
-      <workItem from="1700294465712" duration="16089000" />
+      <workItem from="1700294465712" duration="16307000" />
+      <workItem from="1700360342125" duration="3544000" />
+      <workItem from="1700364470163" duration="13778000" />
     </task>
     <servers />
   </component>
@@ -197,5 +172,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/backend/src/user/user.controller.ts</url>
+          <line>31</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

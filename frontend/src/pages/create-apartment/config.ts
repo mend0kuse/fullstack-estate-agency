@@ -3,6 +3,8 @@ import { TApartmentCreate } from '@/entities/apartment';
 export const DEFAULT_FORM_VALUES: TApartmentCreate = {
     images: [],
     address: '',
+    city: '',
+    rooms: 2,
     description: '',
     communalIncluded: false,
     pledge: 0,

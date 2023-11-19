@@ -1,5 +1,6 @@
-import { Title, Button, Text, Box, BackgroundImage, Center, Overlay } from '@mantine/core';
+import { Title, Text, Box, BackgroundImage, Center, Overlay } from '@mantine/core';
 import classes from './main-preview.module.css';
+import { SearchForm } from '@/features/search/ui/search-form';
 
 export const MainPreview = () => (
     <Box pos={'relative'}>
@@ -11,9 +12,7 @@ export const MainPreview = () => (
                     Откройте двери к вашей мечте с нашим агентством недвижимости
                 </Text>
 
-                <Button variant='gradient' size='xl' radius='xl' className={classes.control}>
-                    Get started
-                </Button>
+                <SearchForm />
             </Center>
         </BackgroundImage>
     </Box>

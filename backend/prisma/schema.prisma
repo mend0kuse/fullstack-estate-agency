@@ -12,10 +12,10 @@ model Order {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  status    String
+  status String
 
   clientId Int?
-  client   User? @relation(fields: [clientId], references: [id], name: "client" )
+  client   User? @relation(fields: [clientId], references: [id], name: "client")
 
   managerId Int?
   manager   User? @relation(fields: [managerId], references: [id], name: "manager")
@@ -51,6 +51,8 @@ model Apartment {
   createdAt        DateTime                 @default(now())
   title            String
   address          String
+  city             String
+  rooms            Int
   description      String
   views            Int
   price            Int

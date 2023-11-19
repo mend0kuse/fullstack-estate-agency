@@ -1,1 +1,1 @@
-export { Apartments } from './ui';
+export { Apartments } from './ui/apartments';

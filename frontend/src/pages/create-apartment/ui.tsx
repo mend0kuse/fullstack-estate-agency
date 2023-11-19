@@ -39,6 +39,8 @@ export const CreateApartment = () => {
                         <TextInput {...form.getInputProps('title')} withAsterisk label='Title' />
                         <TextInput {...form.getInputProps('address')} withAsterisk label='Address' />
                         <Textarea {...form.getInputProps('description')} withAsterisk label='Description' />
+                        <NumberInput {...form.getInputProps('rooms')} withAsterisk label='Rooms' />
+                        <TextInput {...form.getInputProps('city')} withAsterisk label='City' />
                     </Fieldset>
 
                     <Fieldset legend='Payement'>

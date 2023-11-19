@@ -37,7 +37,7 @@ export class UserController {
     ) {
         return this.userService.updateProfile({
             email: request.user?.email,
-            profile: { ...dto, avatar: makeImagePath(file) },
+            profile: { ...dto, avatar: file ? makeImagePath(file) : undefined },
         });
     }
 

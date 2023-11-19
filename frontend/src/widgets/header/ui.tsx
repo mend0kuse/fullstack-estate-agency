@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { ROUTES } from '@/shared/routing';
 import { observer } from 'mobx-react-lite';
 import { IoMdCreate } from 'react-icons/io';
+import { ThemeSwitcher } from '@/shared/ui/theme-icon/theme-switcher';
 
 export const Header = observer(() => (
     <Box>
@@ -34,6 +35,7 @@ export const Header = observer(() => (
                 </Group>
 
                 <Group>
+                    <ThemeSwitcher />
                     {user.isManager && (
                         <ActionIcon to={ROUTES.CREATE_APARTMENT} component={Link} variant='filled' aria-label='Create'>
                             <IoMdCreate />

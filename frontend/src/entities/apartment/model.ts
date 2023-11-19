@@ -3,6 +3,8 @@ import { FileWithPath } from '@mantine/dropzone';
 
 export type TApartmentCreate = {
     title: string;
+    rooms: number;
+    city: string;
     address: string;
     description: string;
     price: number;
@@ -25,4 +27,13 @@ export type TApartment = Omit<TApartmentCreate, 'images'> & {
     views: number;
     user: TUser;
     images: { src: string }[];
+};
+
+export type TUrlState = {
+    rooms?: string[] | string;
+    minPrice?: number;
+    maxPrice?: number;
+    city?: string;
+    order?: 'asc' | 'desc';
+    sort?: 'views' | 'createdAt' | 'price';
 };

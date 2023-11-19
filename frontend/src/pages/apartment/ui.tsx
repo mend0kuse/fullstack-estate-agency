@@ -49,7 +49,12 @@ export const ApartmentPage = observer(() => {
                 </ActionIcon>
             )}
             <Button onClick={onOrder}>Оставить заявку</Button>
-            <ApartmentCard key={apartment?.id} apartment={apartment} />
+            <ApartmentCard isBigView key={apartment?.id} apartment={apartment} />
+            <Text>Коммуналка {apartment.communalIncluded ? 'включена' : 'не включена'}</Text>
+            <Text>Залог {apartment.pledge}</Text>
+            <Text>Предоплата {apartment.prepayment}</Text>
+            <Text>Кол-во комнат {apartment.rooms}</Text>
+            <Text>Город {apartment.city}</Text>
         </Layout>
     );
 });

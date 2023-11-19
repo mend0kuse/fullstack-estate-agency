@@ -1,26 +1,28 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
-import { TApartmentDtoCreate } from './models/apartment';
+import { TApartmentDtoCreate, TApartmentQuery } from './models/apartment';
 import { NotFoundException } from '@nestjs/common/exceptions';
+import { Prisma } from '@prisma/client';
 
 @Injectable()
 export class ApartmentService {
     constructor(private prismaService: PrismaService) {}
 
-    async getAll() {
-        // const args: Prisma.ArticleFindManyArgs = {
-        //     where: {
-        //         ...(query.q && { ...this.search(query.q) }),
-        //         ...(query.category && {
-        //             types: { some: { name: query.category } },
-        //         }),
-        //     },
-        //     ...(query.sort && { orderBy: { [query.sort]: query.order ?? 'asc' } }),
-        //     ...(query.limit && { take: query.limit }),
-        //     ...(query.limit && query.page && { take: query.limit, skip: (query.page - 1) * query.limit }),
-        // };
+    async getAll({ sort, limit, page, order, city, rooms, minPrice, maxPrice }: TApartmentQuery) {
+        const args: Prisma.ApartmentFindManyArgs = {
+            where: {
+                ...(city && { city: { contains: city } }),
+                ...(rooms && { rooms: { in: rooms.split(',').map(Number) } }),
+                ...((minPrice || maxPrice) && {
+                    AND: [{ price: { gte: minPrice ?? 0 } }, { price: { lte: maxPrice ?? Number.MAX_SAFE_INTEGER } }],
+                }),
+            },
+            ...(sort && { orderBy: { [sort]: order ?? 'asc' } }),
+            ...(limit && { take: limit }),
+            ...(limit && page && { take: limit, skip: (page - 1) * limit }),
+        };
 
-        return this.prismaService.apartment.findMany({ include: this.apartmentInclude });
+        return this.prismaService.apartment.findMany({ include: this.apartmentInclude, ...args });
     }
 
     async getOne(id: number) {
@@ -47,10 +49,11 @@ export class ApartmentService {
     async deleteOne(id: number) {
         const deleteImages = this.prismaService.image.deleteMany({ where: { apartmentId: id } });
         const deleteStats = this.prismaService.apartmentCharacteristic.deleteMany({ where: { apartmentId: id } });
+        const deleteOrders = this.prismaService.order.deleteMany({ where: { apartmentId: id } });
         const deleteArticle = this.prismaService.apartment.delete({ where: { id }, include: this.apartmentInclude });
 
         try {
-            return await this.prismaService.$transaction([deleteImages, deleteStats, deleteArticle]);
+            return await this.prismaService.$transaction([deleteImages, deleteStats, deleteOrders, deleteArticle]);
         } catch (error) {
             throw new Error(error);
         }
@@ -70,6 +73,8 @@ export class ApartmentService {
             prepayment,
             price,
             title,
+            city,
+            rooms,
             address,
         } = apartment;
 
@@ -82,6 +87,8 @@ export class ApartmentService {
                     pledge: Number(pledge),
                     prepayment: Number(prepayment),
                     price: Number(price),
+                    rooms: Number(rooms),
+                    city,
                     title,
                     address,
                     description,
@@ -110,61 +117,6 @@ export class ApartmentService {
             throw new Error(error);
         }
     }
-
-    private search = (q: string) => ({
-        OR: [
-            {
-                title: {
-                    contains: q,
-                },
-            },
-            {
-                suptitle: {
-                    contains: q,
-                },
-            },
-            {
-                codeBlocks: {
-                    some: {
-                        code: {
-                            contains: q,
-                        },
-                    },
-                },
-            },
-            {
-                imageBlocks: {
-                    some: {
-                        title: {
-                            contains: q,
-                        },
-                    },
-                },
-            },
-            {
-                textBlocks: {
-                    some: {
-                        OR: [
-                            {
-                                title: {
-                                    contains: q,
-                                },
-                            },
-                            {
-                                paragraphs: {
-                                    some: {
-                                        text: {
-                                            contains: q,
-                                        },
-                                    },
-                                },
-                            },
-                        ],
-                    },
-                },
-            },
-        ],
-    });
 
     private selectUser = {
         id: true,

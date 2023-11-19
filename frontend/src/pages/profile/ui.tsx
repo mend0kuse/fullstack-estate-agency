@@ -1,5 +1,5 @@
 import { useEditOrderStatus, useEditProfile, useGetOrders, useGetUser } from '@/pages/profile/lib';
-import { ActionIcon, LoadingOverlay, Modal, Text } from '@mantine/core';
+import { ActionIcon, Group, LoadingOverlay, Modal, Text } from '@mantine/core';
 import { CenteredLayout, Layout } from '@/layout';
 import { useLoadingAndErrorHandler } from '@/shared/ui';
 import { ProfileCard, ProfileForm } from '@/entities/user';
@@ -52,13 +52,15 @@ export const Profile = observer(() => {
 
     return (
         <Layout>
-            <ProfileCard user={user} />
+            <Group>
+                <ProfileCard user={user} />
 
-            {isHomeProfile && (
-                <ActionIcon onClick={open} variant='filled' aria-label='Edit'>
-                    <AiFillEdit style={{ width: '70%', height: '70%' }} />
-                </ActionIcon>
-            )}
+                {isHomeProfile && (
+                    <ActionIcon onClick={open} variant='filled' aria-label='Edit'>
+                        <AiFillEdit style={{ width: '70%', height: '70%' }} />
+                    </ActionIcon>
+                )}
+            </Group>
 
             {orders && orders.length > 0 && isHomeProfile && (
                 <OrderList
