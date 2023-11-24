@@ -34,20 +34,12 @@ export class User {
         makeAutoObservable(this);
     }
 
-    logout() {
-        this.data = null;
-    }
-
-    setData(data: TUser) {
+    setData(data: TUser | null) {
         this.data = data;
     }
 
     get isManager() {
         return this.data?.role === 'manager';
-    }
-
-    get nickname() {
-        return this.data?.profile.name ?? this.data?.email;
     }
 
     get avatar() {

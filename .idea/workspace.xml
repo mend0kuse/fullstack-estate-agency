@@ -5,62 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fae27c0-356f-473f-8ea2-3a25239f3086" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/uploads/0d1d296953df817c711c1c9723ca05f1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/13b644fb5a8457b9b9a51003d74017ed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/165285d1ed948170eb96306a3631eb5a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/1f1817f67b94a6d5a785cf94a2b5ca6a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/2dfa34c8fb4f7c272c4b80c4a2067fb1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/3a1a038b4b3772e5e000d694da28fb7f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/3a5dcc1f6f2c3eb983161dc689d9a8fa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/3e4efadd0d9b08fff29d88de96402e58" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/466d33e19f75404d608c75de93506892" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/4a593b8461ef85fc16924947f319721e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/579c26b1dc954a5712a4a65b3806e74d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/5d15e8bb6d7fa7e6206126cdbfb878f6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/7c2ac3de3ac20b540a7e738f6b8a7390" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/8561b6a1612bbde16717924b553380a2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/ad43ff6d34e9328d416bb0dad4bcf675" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/bc69f30e2f4962d0f786ea204db963b1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/c9b14040650eb1854e27de18b41ada22" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/dfa08b051b187485af32311d6ed19808" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/f2592858240781490dd99a2e84cc60d3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/ff05bf111423fb7cdef9e7c6d77ece82" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/features/search/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/features/search/ui/search-form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/main/ui/features/features.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/main/ui/features/features.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/shared/lib/url/setQueryParamInUrl.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/shared/ui/theme-icon/theme-icon.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/shared/ui/theme-icon/theme-switcher.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/widgets/apartments/ui/apartments.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/widgets/apartments/ui/filters/filters.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/entities/user/model.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/shared/lib/validator/regexp.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/backend/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/apartment/apartment.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/apartment/apartment.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/apartment/apartment.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/apartment/apartment.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/apartment/models/apartment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/apartment/models/apartment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/user/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/user/user.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/entities/apartment/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/entities/apartment/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/entities/apartment/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/entities/apartment/ui/apartment-card/apartment-card.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/ui/apartment-card/apartment-card.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/entities/apartment/ui/apartment-card/apartment-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/ui/apartment-card/apartment-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/layout/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/apartment/ui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/apartment/ui.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/create-apartment/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/create-apartment/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/create-apartment/ui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/create-apartment/ui.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/main/ui/main-preview/main-preview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/main/ui/main-preview/main-preview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/main/ui/main/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/main/ui/main/main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/profile/lib.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/profile/lib.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/profile/ui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/profile/ui.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/shared/api/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/shared/api/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/widgets/apartments/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/widgets/apartments/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/widgets/apartments/ui.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/widgets/apartments/ui.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/widgets/header/ui.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/widgets/header/ui.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/widgets/header/ui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/widgets/header/ui.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/entities/user/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/entities/user/model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/shared/lib/url/setQueryParamInUrl.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,6 +85,87 @@
       <recent name="$PROJECT_DIR$/frontend/src/entities/user/model.ts" />
     </key>
   </component>
+  <component name="RunManager" selected="Vitest.Тестирование класса User">
+    <configuration name="Тестирование класса User" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <vitest-package value="$PROJECT_DIR$/frontend/node_modules/vitest" />
+      <working-dir value="$PROJECT_DIR$/frontend" />
+      <vitest-options value="--run" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/frontend/src/entities/user/model.test.ts" />
+      <test-names>
+        <test-name value="Тестирование класса User" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Тестирование класса User.Тестирование с переданным null" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <vitest-package value="$PROJECT_DIR$/frontend/node_modules/vitest" />
+      <working-dir value="$PROJECT_DIR$/frontend" />
+      <vitest-options value="--run" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/frontend/src/entities/user/model.test.ts" />
+      <test-names>
+        <test-name value="Тестирование класса User" />
+        <test-name value="Тестирование с переданным null" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Тестирование класса User.Тестирование с переданным user.Геттер isManager должен возвращать true при роли manager" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <vitest-package value="$PROJECT_DIR$/frontend/node_modules/vitest" />
+      <working-dir value="$PROJECT_DIR$/frontend" />
+      <vitest-options value="--run" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/frontend/src/entities/user/model.test.ts" />
+      <test-names>
+        <test-name value="Тестирование класса User" />
+        <test-name value="Тестирование с переданным user" />
+        <test-name value="Геттер isManager должен возвращать true при роли manager" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Тестирование регулярных выражений.Тестирование email.Должен возвращать false при пустой строке" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <vitest-package value="$PROJECT_DIR$/frontend/node_modules/vitest" />
+      <working-dir value="$PROJECT_DIR$/frontend" />
+      <vitest-options value="--run" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/frontend/src/shared/lib/validator/regexp.test.ts" />
+      <test-names>
+        <test-name value="Тестирование регулярных выражений" />
+        <test-name value="Тестирование email" />
+        <test-name value="Должен возвращать false при пустой строке" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Тестирование регулярных выражений" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <vitest-package value="$PROJECT_DIR$/frontend/node_modules/vitest" />
+      <working-dir value="$PROJECT_DIR$/frontend" />
+      <vitest-options value="--run" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/frontend/src/shared/lib/validator/regexp.test.ts" />
+      <test-names>
+        <test-name value="Тестирование регулярных выражений" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Vitest.Тестирование класса User" />
+        <item itemvalue="Vitest.Тестирование класса User.Тестирование с переданным null" />
+        <item itemvalue="Vitest.Тестирование класса User.Тестирование с переданным user.Геттер isManager должен возвращать true при роли manager" />
+        <item itemvalue="Vitest.Тестирование регулярных выражений" />
+        <item itemvalue="Vitest.Тестирование регулярных выражений.Тестирование email.Должен возвращать false при пустой строке" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -163,7 +193,12 @@
       <workItem from="1700293797901" duration="658000" />
       <workItem from="1700294465712" duration="16307000" />
       <workItem from="1700360342125" duration="3544000" />
-      <workItem from="1700364470163" duration="13778000" />
+      <workItem from="1700364470163" duration="13902000" />
+      <workItem from="1700479884504" duration="107000" />
+      <workItem from="1700538570342" duration="4000" />
+      <workItem from="1700714358003" duration="25000" />
+      <workItem from="1700721030586" duration="50000" />
+      <workItem from="1700748797869" duration="2907000" />
     </task>
     <servers />
   </component>
@@ -179,7 +214,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/backend/src/user/user.controller.ts</url>
           <line>31</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
