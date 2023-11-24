@@ -27,10 +27,10 @@ export const Header = observer(() => (
 
                 <Group h='100%' gap={0}>
                     <Link to={ROUTES.MAIN} className={classes.link}>
-                        Home
+                        Главная
                     </Link>
                     <Link to={ROUTES.CATALOG} className={classes.link}>
-                        Catalog
+                        Каталог
                     </Link>
                 </Group>
 

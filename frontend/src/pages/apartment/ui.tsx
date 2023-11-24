@@ -48,7 +48,9 @@ export const ApartmentPage = observer(() => {
                     <MdDeleteForever />
                 </ActionIcon>
             )}
-            <Button onClick={onOrder}>Оставить заявку</Button>
+            <Button mb={'lg'} onClick={onOrder}>
+                Оставить заявку
+            </Button>
             <ApartmentCard isBigView key={apartment?.id} apartment={apartment} />
             <Text>Коммуналка {apartment.communalIncluded ? 'включена' : 'не включена'}</Text>
             <Text>Залог {apartment.pledge}</Text>

@@ -27,20 +27,20 @@ export const SearchForm = () => {
     return (
         <Group align={'end'} mt={'xs'} style={{ borderRadius: 10 }} p={'xs'} bg={'white'}>
             <MultiSelect
-                placeholder='Choose a room'
+                placeholder='Количество комнат'
                 onChange={(newValue) => setUrlState({ rooms: newValue })}
                 value={typeof urlState.rooms === 'string' ? urlState.rooms.split(',') : urlState.rooms}
                 data={['1', '2', '3', '4']}
             />
             <TextInput
-                placeholder='City'
+                placeholder='Город'
                 onChange={(event) => setUrlState({ city: event.target.value })}
                 value={urlState.city}
             />
             <Popover width={250} position='bottom' shadow='md'>
                 <Popover.Target>
                     <Button>
-                        {urlState.minPrice || 'Min price'} - {urlState.maxPrice || 'Max price'}
+                        {urlState.minPrice || 'Минимальная цена'} - {urlState.maxPrice || 'Максимальная цена'}
                     </Button>
                 </Popover.Target>
                 <Popover.Dropdown>

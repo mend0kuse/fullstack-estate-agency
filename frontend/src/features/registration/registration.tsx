@@ -14,8 +14,8 @@ export const Registration = () => {
         },
 
         validate: {
-            email: (value) => (isValidEmail(value) ? null : 'Invalid email'),
-            password: (value) => (isValidPassword(value) ? null : 'Invalid password'),
+            email: (value) => (isValidEmail(value) ? null : 'Неправильная почта'),
+            password: (value) => (isValidPassword(value) ? null : 'Неправильный пароль'),
         },
     });
 
@@ -27,12 +27,12 @@ export const Registration = () => {
         <Box maw={340} mx='auto'>
             {error && <Text c={'red'}>{transformAxiosError(error)}</Text>}
             <form onSubmit={form.onSubmit(onSubmit)}>
-                <TextInput withAsterisk label='Email' placeholder='your@email.com' {...form.getInputProps('email')} />
-                <PasswordInput withAsterisk label='Password' {...form.getInputProps('password')} />
+                <TextInput withAsterisk label='Почта' placeholder='your@email.com' {...form.getInputProps('email')} />
+                <PasswordInput withAsterisk label='Пароль' {...form.getInputProps('password')} />
 
                 <Group justify='flex-end' mt='md'>
                     <Button loading={isPending} type='submit'>
-                        Submit
+                        Зарегестрироваться
                     </Button>
                 </Group>
             </form>

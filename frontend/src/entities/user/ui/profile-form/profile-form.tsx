@@ -24,15 +24,15 @@ export const ProfileForm = ({ profile, onSubmit }: Props) => {
 
     return (
         <form onReset={onReset} onSubmit={form.onSubmit(onSubmit)}>
-            <Avatar size={'xl'} src={newAvatarUrl ?? profile.avatar} alt="it's me" />
-            <FileInput {...form.getInputProps('avatar')} label='Upload avatar' placeholder='Upload avatar' clearable />
-            <TextInput label='Name' {...form.getInputProps('name')} />
-            <TextInput label='Age' {...form.getInputProps('age')} />
+            <Avatar size={'xl'} src={newAvatarUrl ?? profile.avatar} alt='Аватар' />
+            <FileInput {...form.getInputProps('avatar')} label='Аватар' placeholder='Загрузите изображение' clearable />
+            <TextInput label='Имя' {...form.getInputProps('name')} />
+            <TextInput label='Возраст' {...form.getInputProps('age')} />
             <Group justify='flex-end' mt='md'>
                 <Button variant={'outline'} type='reset'>
-                    Reset
+                    Сбросить
                 </Button>
-                <Button type='submit'>Submit</Button>
+                <Button type='submit'>Отправить</Button>
             </Group>
         </form>
     );

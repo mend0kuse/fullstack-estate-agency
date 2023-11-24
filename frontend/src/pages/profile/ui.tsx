@@ -71,7 +71,7 @@ export const Profile = observer(() => {
                 />
             )}
 
-            <Modal pos={'relative'} opened={openedEdit} onClose={close} title='Edit profile'>
+            <Modal pos={'relative'} opened={openedEdit} onClose={close} title='Редактировать профиль'>
                 <LoadingOverlay visible={isPending} zIndex={1000} overlayProps={{ radius: 'sm', blur: 2 }} />
                 <ProfileForm onSubmit={onSubmit} profile={user.profile} />
                 {errorEdit && <Text c={'red'}>{transformAxiosError(errorEdit)}</Text>}

@@ -73,7 +73,7 @@ export const ApartmentCard = ({
                 </Box>
 
                 <Button to={ROUTES.APARTMENT(id)} component={Link} radius='md'>
-                    Book now
+                    Оформить сейчас
                 </Button>
             </Group>
         </Card>

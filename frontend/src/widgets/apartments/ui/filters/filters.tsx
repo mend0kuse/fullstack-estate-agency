@@ -33,28 +33,28 @@ export const Filters = ({ onApply }: Props) => {
     return (
         <Stack gap={20}>
             <Select
-                placeholder='Sort'
+                placeholder='Сортировка'
                 style={{ maxWidth: 250 }}
                 onChange={(newValue) => setUrlParams({ sort: newValue })}
                 value={urlState.sort}
                 data={Object.entries(sortMap).map(([key, value]) => ({ value: key, label: value }))}
             />
             <Select
-                placeholder='Order'
+                placeholder='Порядок'
                 style={{ maxWidth: 250 }}
                 onChange={(newValue) => setUrlParams({ order: newValue })}
                 value={urlState.order}
                 data={Object.entries(orderMap).map(([key, value]) => ({ value: key, label: value }))}
             />
             <MultiSelect
-                placeholder='Choose a room'
+                placeholder='Количество комнат'
                 style={{ maxWidth: 250 }}
                 onChange={(newValue) => setUrlParams({ rooms: newValue })}
                 value={typeof urlState.rooms === 'string' ? urlState.rooms.split(',') : urlState.rooms}
                 data={['1', '2', '3', '4']}
             />
             <TextInput
-                placeholder='City'
+                placeholder='Город'
                 onChange={(event) => setUrlParams({ city: event.target.value })}
                 value={urlState.city}
             />
@@ -76,7 +76,7 @@ export const Filters = ({ onApply }: Props) => {
                     value={urlState.maxPrice}
                 />
             </Group>
-            <Button onClick={onApply}>Apply</Button>
+            <Button onClick={onApply}>Применить</Button>
         </Stack>
     );
 };

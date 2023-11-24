@@ -18,13 +18,13 @@ export class AuthService {
         const user = await this.usersService.getOne({ email: dto.email });
 
         if (!user) {
-            throw new UnauthorizedException('Invalid email');
+            throw new UnauthorizedException('Неправильная почта');
         }
 
         const isMatch = await bcrypt.compare(dto.password, user?.password);
 
         if (!isMatch) {
-            throw new UnauthorizedException('Invalid password');
+            throw new UnauthorizedException('Неправильный пароль');
         }
 
         return {

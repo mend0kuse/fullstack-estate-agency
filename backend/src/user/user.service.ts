@@ -29,9 +29,7 @@ export class UserService {
         const found = await this.getOne({ email: data.email });
 
         if (found) {
-            throw new BadRequestException(
-                'There is a unique constraint violation, a new user cannot be created with this email'
-            );
+            throw new BadRequestException('Пользователь с таким email уже существует');
         }
 
         const created = await this.prisma.user.create({

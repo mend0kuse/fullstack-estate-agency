@@ -25,8 +25,8 @@ export const Login = () => {
             {error && <Text c={'red'}>{transformAxiosError(error)}</Text>}
 
             <form onSubmit={form.onSubmit(onSubmit)}>
-                <TextInput {...form.getInputProps('email')} withAsterisk label='Email' placeholder='your@email.com' />
-                <PasswordInput {...form.getInputProps('password')} withAsterisk label='Password' />
+                <TextInput {...form.getInputProps('email')} withAsterisk label='Почта' placeholder='your@email.com' />
+                <PasswordInput {...form.getInputProps('password')} withAsterisk label='Пароль' />
 
                 <Group justify='flex-end' mt='md'>
                     <Anchor component={Link} to={ROUTES.REGISTRATION}>

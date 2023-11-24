@@ -4,219 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fae27c0-356f-473f-8ea2-3a25239f3086" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/entities/user/model.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/shared/lib/validator/regexp.test.ts" afterDir="false" />
+    <list default="true" id="40c169bd-310e-4190-a6b8-22336fcb36ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/entities/user/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/entities/user/model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/shared/lib/url/setQueryParamInUrl.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/order/order.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/order/order.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/user/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/validation/stringToNumber.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/validation/stringToNumber.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/entities/apartment/ui/apartment-card/apartment-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/entities/apartment/ui/apartment-card/apartment-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/entities/user/ui/profile-form/profile-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/entities/user/ui/profile-form/profile-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/login/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/registration/registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/registration/registration.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/search/ui/search-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/search/ui/search-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/apartment/ui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/apartment/ui.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/main/ui/contacts/contacts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/main/ui/contacts/contacts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/main/ui/contacts/icons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/main/ui/contacts/icons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/profile/ui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/profile/ui.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/widgets/apartments/ui/filters/filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/widgets/apartments/ui/filters/filters.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/widgets/header/ui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/widgets/header/ui.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FormatOnSaveOptions">
-    <option name="myRunOnSave" value="false" />
-    <option name="myAllFileTypesSelected" value="true" />
-    <option name="mySelectedFileTypes">
-      <set />
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="2Xk7nBqaqUjV65qV6eeNrgenN2g" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="autoscrollFromSource" value="true" />
-    <option name="autoscrollToSource" value="true" />
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="openDirectoriesWithSingleClick" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/vasilev/develop/fullstack-estate-agency/frontend&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;/Users/vasilev/develop/fullstack-estate-agency/frontend/node_modules/stylelint&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/vasilev/develop/fullstack-estate-agency/backend/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/vasilev/develop/fullstack-estate-agency/backend/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "master",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "prettierjs.PrettierConfiguration.Package": "/Users/vasilev/develop/fullstack-estate-agency/backend/node_modules/prettier",
+    "ts.external.directory.path": "/Users/vasilev/develop/fullstack-estate-agency/backend/node_modules/typescript/lib"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend" />
-      <recent name="$PROJECT_DIR$/backend/src" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend/src/widgets/apartments/ui" />
-      <recent name="$PROJECT_DIR$/frontend/src/widgets/apartments/ui/filters" />
-      <recent name="$PROJECT_DIR$/frontend/src/shared/ui/theme-icon" />
-      <recent name="$PROJECT_DIR$/frontend/src/pages/main/ui/main-preview" />
-      <recent name="$PROJECT_DIR$/frontend/src/entities/apartment/ui/apartment-card" />
-    </key>
-    <key name="es6.move.members.recent.items">
-      <recent name="$PROJECT_DIR$/frontend/src/entities/apartment/model.ts" />
-      <recent name="$PROJECT_DIR$/frontend/src/shared/api/config.ts" />
-      <recent name="$PROJECT_DIR$/frontend/src/entities/user/model.ts" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Vitest.Тестирование класса User">
-    <configuration name="Тестирование класса User" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <vitest-package value="$PROJECT_DIR$/frontend/node_modules/vitest" />
-      <working-dir value="$PROJECT_DIR$/frontend" />
-      <vitest-options value="--run" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/frontend/src/entities/user/model.test.ts" />
-      <test-names>
-        <test-name value="Тестирование класса User" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Тестирование класса User.Тестирование с переданным null" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <vitest-package value="$PROJECT_DIR$/frontend/node_modules/vitest" />
-      <working-dir value="$PROJECT_DIR$/frontend" />
-      <vitest-options value="--run" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/frontend/src/entities/user/model.test.ts" />
-      <test-names>
-        <test-name value="Тестирование класса User" />
-        <test-name value="Тестирование с переданным null" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Тестирование класса User.Тестирование с переданным user.Геттер isManager должен возвращать true при роли manager" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <vitest-package value="$PROJECT_DIR$/frontend/node_modules/vitest" />
-      <working-dir value="$PROJECT_DIR$/frontend" />
-      <vitest-options value="--run" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/frontend/src/entities/user/model.test.ts" />
-      <test-names>
-        <test-name value="Тестирование класса User" />
-        <test-name value="Тестирование с переданным user" />
-        <test-name value="Геттер isManager должен возвращать true при роли manager" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Тестирование регулярных выражений.Тестирование email.Должен возвращать false при пустой строке" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <vitest-package value="$PROJECT_DIR$/frontend/node_modules/vitest" />
-      <working-dir value="$PROJECT_DIR$/frontend" />
-      <vitest-options value="--run" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/frontend/src/shared/lib/validator/regexp.test.ts" />
-      <test-names>
-        <test-name value="Тестирование регулярных выражений" />
-        <test-name value="Тестирование email" />
-        <test-name value="Должен возвращать false при пустой строке" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Тестирование регулярных выражений" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <vitest-package value="$PROJECT_DIR$/frontend/node_modules/vitest" />
-      <working-dir value="$PROJECT_DIR$/frontend" />
-      <vitest-options value="--run" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/frontend/src/shared/lib/validator/regexp.test.ts" />
-      <test-names>
-        <test-name value="Тестирование регулярных выражений" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Vitest.Тестирование класса User" />
-        <item itemvalue="Vitest.Тестирование класса User.Тестирование с переданным null" />
-        <item itemvalue="Vitest.Тестирование класса User.Тестирование с переданным user.Геттер isManager должен возвращать true при роли manager" />
-        <item itemvalue="Vitest.Тестирование регулярных выражений" />
-        <item itemvalue="Vitest.Тестирование регулярных выражений.Тестирование email.Должен возвращать false при пустой строке" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+}]]></component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="7fae27c0-356f-473f-8ea2-3a25239f3086" name="Changes" comment="" />
-      <created>1699161388371</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1699161388371</updated>
-      <workItem from="1699161389393" duration="998000" />
-      <workItem from="1699162393795" duration="17821000" />
-      <workItem from="1699341600249" duration="29000" />
-      <workItem from="1699668946866" duration="3827000" />
-      <workItem from="1699672784910" duration="7000000" />
-      <workItem from="1699689578469" duration="1650000" />
-      <workItem from="1699691237366" duration="7642000" />
-      <workItem from="1699762688267" duration="13598000" />
-      <workItem from="1699786484580" duration="658000" />
-      <workItem from="1699858539622" duration="922000" />
-      <workItem from="1700275615423" duration="2980000" />
-      <workItem from="1700290642537" duration="2715000" />
-      <workItem from="1700293366146" duration="418000" />
-      <workItem from="1700293797901" duration="658000" />
-      <workItem from="1700294465712" duration="16307000" />
-      <workItem from="1700360342125" duration="3544000" />
-      <workItem from="1700364470163" duration="13902000" />
-      <workItem from="1700479884504" duration="107000" />
-      <workItem from="1700538570342" duration="4000" />
-      <workItem from="1700714358003" duration="25000" />
-      <workItem from="1700721030586" duration="50000" />
-      <workItem from="1700748797869" duration="2907000" />
-    </task>
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/backend/src/user/user.controller.ts</url>
-          <line>31</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

@@ -10,8 +10,6 @@ import { OrderModule } from './order/order.module';
 })
 export class AppModule implements NestModule {
     configure(consumer: MiddlewareConsumer) {
-        if (process.env.NODE_ENV === 'development') {
-            consumer.apply(DelayMiddleware).forRoutes('*');
-        }
+        consumer.apply(DelayMiddleware).forRoutes('*');
     }
 }

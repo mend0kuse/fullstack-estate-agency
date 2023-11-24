@@ -27,14 +27,14 @@ function ContactIcon({ icon: Icon, title, description, ...others }: ContactIconP
     );
 }
 
-const MOCK_DATA = [
-    { title: 'Email', description: 'hello@mantine.dev', icon: MdEmail },
-    { title: 'Phone', description: '+49 (800) 335 35 35', icon: FaPhone },
-    { title: 'Address', description: '844 Morris Park avenue', icon: FaAddressCard },
-    { title: 'Working hours', description: '8 a.m. – 11 p.m.', icon: FaClock },
+const CONTACT_ITEMS = [
+    { title: 'Почта', description: 'rea@mail.ru', icon: MdEmail },
+    { title: 'Телефон', description: '+49 (800) 335 35 35', icon: FaPhone },
+    { title: 'Адрес', description: 'Ленина 5а', icon: FaAddressCard },
+    { title: 'Рабочий график', description: '8:00 - 17:00', icon: FaClock },
 ];
 
 export const ContactIconsList = () => {
-    const items = MOCK_DATA.map((item, index) => <ContactIcon key={index} {...item} />);
+    const items = CONTACT_ITEMS.map((item, index) => <ContactIcon key={index} {...item} />);
     return <Stack>{items}</Stack>;
 };

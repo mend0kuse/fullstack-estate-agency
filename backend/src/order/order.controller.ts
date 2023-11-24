@@ -4,8 +4,7 @@ import { RequestWithUser } from '../user/schemas/user.dto';
 import { NotFoundException } from '@nestjs/common/exceptions';
 import { OrderService } from './order.service';
 import { ApartmentService } from '../apartment/apartment.service';
-import { ZodValidationPipe } from '../validation/zod-validation.pipe';
-import { TOrderUpdate, updateOrderDto } from './dto';
+import { TOrderUpdate } from './dto';
 
 @Controller('order')
 export class OrderController {
@@ -32,7 +31,7 @@ export class OrderController {
         const relatedApartment = await this.apartmentService.getOne(apartmentId);
 
         if (!relatedApartment) {
-            throw new NotFoundException('Apartment not found');
+            throw new NotFoundException('Квартира не найдена');
         }
 
         return this.orderService.create({ clientId: req.user.id, apartmentId, managerId: relatedApartment.user.id });

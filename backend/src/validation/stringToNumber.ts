@@ -6,7 +6,7 @@ export const stringToNumber = z.string().transform((val, ctx) => {
     if (isNaN(parsed)) {
         ctx.addIssue({
             code: z.ZodIssueCode.custom,
-            message: 'Not a number',
+            message: 'Ожидается число',
         });
 
         return z.NEVER;
